@@ -146,12 +146,16 @@ margin-right: 50px;
 }
 .contact-nav{
 margin-left: auto;
+/* display: flex; */
+align-items: center;
+}
+
+.email, .phone{
 display: flex;
 align-items: center;
 }
 
 .email::before{
-display: inline-block;
 content: "";
 background-image: url(../IMG/header/envelope.svg);
 height: 12px;
@@ -358,8 +362,28 @@ font-size: 16px;
 line-height: 1.17;
 /* margin-top: 10px; */
 }
+            /* Оформление ссылок на соцсети */
 
-/* Секция наши клиенты */
+.social-list{    
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 16px;
+margin-bottom: 30px;
+}
+
+.social-item {
+outline: 1px solid pink;
+margin-right: 10px;
+}
+.social-item:last-child{
+margin-right: 0;
+}
+
+
+
+
+                    /* Секция наши клиенты */
 
 .clients{
 background-color: var(--header-background-color);
